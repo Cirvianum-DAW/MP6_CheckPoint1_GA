@@ -32,6 +32,10 @@ module.exports = {
           id: 3,
           name: 'Bob',
         },
+        {
+          id: 4,
+          name: 'Alice',
+        },
       ],
     },
     {
@@ -48,6 +52,36 @@ module.exports = {
         {
           id: 2,
           name: 'Jane',
+        },
+      ],
+    },
+    {
+      id: 4,
+      name: 'Alice',
+      age: 28,
+      gender: 'female',
+      hobbies: ['reading', 'yoga', 'cooking'],
+      friends: [
+        {
+          id: 5,
+          name: 'Charlie',
+        },
+      ],
+    },
+    {
+      id: 5,
+      name: 'Charlie',
+      age: 32,
+      gender: 'male',
+      hobbies: ['reading', 'running', 'biking'],
+      friends: [
+        {
+          id: 4,
+          name: 'Alice',
+        },
+        {
+          id: 1,
+          name: 'John',
         },
       ],
     },

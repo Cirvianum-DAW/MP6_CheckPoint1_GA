@@ -37,7 +37,7 @@ const sleepHours = {
     thursday: 7,
     friday: 6,
     saturday: 9,
-    sunday: 8
+    sunday: 8,
     idealHoursDay: 8
 };
 
@@ -62,4 +62,16 @@ A continuació hauràs d'implementar les següents funcions (cada funció ha de 
 
 **Puntuació: cada funció té el mateix pes, 2/6 = 1/3p**
 
-### :rocket: Exercici 3 - Databases (2punts)
+### :rocket: Exercici 3 - Databases (2,5punts)
+
+L'exercici 3 té importada una base de dades en format JSON i ja passades a un arxiu js. Pots veure les dades a l'arxiu data_ex3.js
+
+Hauràs de realitzar les següents tasques. T'aconsello que pensis bé en cada cas quin mètode de l'array és el més adequat per resoldre cada cas:
+
+1. Retornar un array amb tots els usuaris que tenen el hobbie "running" (0,5p).
+2. Calcular i retornar la mitjana d'edat (numero arrodonit a l'enter més petit) de les amistats de l'usuari en funció de l'id que li passem (1p).
+3. Retornar un array amb els hobbies que comparteixen l'usuari i les seves amistats si existeixen (1p).
+
+Puntuació: només comptarà si funciona la funció i es fan servir mètodes d'arrays.
+
+:speech_balloon: **Hi ha 0,5p extra. 4p del test + 6,5p (10,5p) totals que es poden aconseguir i poden ajudar a pujar nota. La nota màxima final haurà de ser <= 10 en qualssevol cas.**
