@@ -18,45 +18,17 @@ const activities = [
   { name: 'Play videogames', time: 5 },
 ];
 
-const getSleepHours = (day) => {
-  return sleepHours[day];
-};
+const getSleepHours = (day) => {};
 
-const getActualSleepHours = () => {
-  let totalHours = 0;
-  for (let day in sleepHours) {
-    if (day !== 'idealHoursDay') {
-      totalHours += getSleepHours(day);
-    }
-  }
-  return totalHours;
-};
+const getActualSleepHours = () => {};
 
-const getIdealSleepHours = () => {
-  return sleepHours.idealHoursDay * 7;
-};
+const getIdealSleepHours = () => {};
 
-const getFreeTimeHours = () => {
-  return getIdealSleepHours() - getActualSleepHours();
-};
+const getFreeTimeHours = () => {};
 
-const calculaeActivityTime = (activities) => {
-  let totalHours = 0;
-  for (let activity of activities) {
-    totalHours += activity.time;
-  }
-  return totalHours;
-};
+const calculaeActivityTime = (activities) => {};
 
-const canDoActivities = (activities) => {
-  if (calculaeActivityTime(activities) <= getFreeTimeHours()) {
-    console.log('You can do all the activities');
-    return 'You can do all the activities';
-  } else {
-    console.log("You can't do all the activities");
-    return "You can't do all the activities";
-  }
-};
+const canDoActivities = (activities) => {};
 
 module.exports = {
   getSleepHours,
