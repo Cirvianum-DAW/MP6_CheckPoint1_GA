@@ -1,6 +1,6 @@
 # Check Point 1 - UF1 i UF2 - Fonaments de JS, funcions i arrays.
 
-## :warning: **ATENCIÓ!** Crea un arxiu per cada exercici amb el nom Ex1, Ex2, etc. sota la carpeta /src i fes un commit per cada exercici! :warning:
+## :warning: **ATENCIÓ!** No creeïs cap arxiu nom i treballa als arxius ja creats amb els noms Ex1, Ex2 and Ex3 sota la carpeta /src i fes un commit per cada exercici! Verifica els testos per acabar d'entendre el que es demana i verificar que el resultat és l'esperat :warning:
 
 ### :weight_lifting_man: Exercici 1 - Tauler d'escacs (2punts)
 
@@ -27,7 +27,7 @@ Quan passes aquesta cadena de text a `console.log`, s'hauria de mostrar alguna c
 
 En aquest exercici, crearàs un petit planificador d'activitats. L'objectiu és calcular si tens temps suficient per realitzar les activitats diàries que tens planejades. El programa calcularà el temps disponible a partir de les teves hores de son, el temps que passes treballant i altres compromisos.
 
-Per practicar-ho, et facilitem les dades amb les que hauràs de provar el teu programa. Aquestes dades són les següents:
+Per practicar-ho, et facilitem les dades amb les que hauràs de provar el teu programa. Aquestes dades són les següents i ja les tens disponibles a l'arxiu data_ex2.js:
 
 ```javascript
 const sleepHours = {
