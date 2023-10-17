@@ -2,15 +2,6 @@ const { users } = require('./data_ex3');
 
 const { getUsersByHobby, friendsAverageAge, sharedHobbies } = require('./Ex3');
 
-describe('Ex1', () => {
-  test("genera un tauler d'escacs de 8x8", () => {
-    const expectedOutput =
-      ' # # # #\n# # # # \n # # # #\n# # # # \n # # # #\n# # # # \n # # # #\n# # # # \n';
-    expect(taulerEscacs()).toBe(expectedOutput);
-  });
-});
-
-
 describe('Ex3', () => {
   it('should return an array of user names who have the given hobby', () => {
     const expected = ['John', 'Charlie'];

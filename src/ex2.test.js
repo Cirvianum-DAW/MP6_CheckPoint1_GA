@@ -29,7 +29,7 @@ describe('Ex2', () => {
     expect(getFreeTimeHours()).toBe(5);
   });
 
-  test('calculaeActivityTime', () => {
+  test('calculateActivityTime', () => {
     expect(
       calculaeActivityTime([
         { name: 'Gym', time: 1 },
