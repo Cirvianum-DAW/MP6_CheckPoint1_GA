@@ -18,23 +18,69 @@ const activities = [
   { name: 'Play videogames', time: 5 },
 ];
 
-const getSleepHours = (day) => {};
+const getSleepHours = (day) => {
+  return sleepHours[day];
+};
 
-const getActualSleepHours = () => {};
+// Sumem les hores de cada dia fins diumenge
+// Compte perquè "idealHoursDay" no és un dia de la setmana
+// Per tant, no el podem sumar
+// I si volem treballar amb iteració, hem de passar els dies a un array --> Object.keys(sleepHours)
+const getActualSleepHours = () => {
+  let totalHours = 0;
+  const days = Object.keys(sleepHours);
+  for (let i = 0; i < days.length; i++) {
+    const day = days[i];
+    if (day !== 'idealHoursDay') {
+      totalHours += sleepHours[day];
+    }
+  }
+  return totalHours;
+};
 
-const getIdealSleepHours = () => {};
+// Multipliquem les hores que volem dormir per dia per 7 dies
+const getIdealSleepHours = () => {
+  return sleepHours.idealHoursDay * 7;
+};
 
-const getFreeTimeHours = () => {};
+//Opció 1 - El que us vaig cometar a classe; simplement restem les hores que dormim de les que volem dormir
+const getFreeTimeHours = () => {
+  return getIdealSleepHours() - getActualSleepHours();
+};
 
-const calculaeActivityTime = (activities) => {};
+//Opció 2 - Tenint en compte les hores treballades, els dies de la setmana i segurament la opció més lògica
+// Li trec a la setmana les hores que treballo i les hores que dormo
+const getFreeTimeHours2 = () => {
+  const hoursWeek = 24 * 7;
+  const hoursWorked = workHours * 5;
+  return hoursWeek - hoursWorked - getActualSleepHours();
+};
 
-const canDoActivities = (activities) => {};
+// Calculem el temps total que duren totes les activitats que ens hem proposat
+const calculateActivityTime = (activities) => {
+  let totalHours = 0;
+  for (let i = 0; i < activities.length; i++) {
+    totalHours += activities[i].time;
+  }
+  return totalHours;
+};
+
+// En funció del temps que tenim lliure, podem fer totes les activitats o no
+const canDoActivities = (activities) => {
+  const freeTime = getFreeTimeHours();
+  const totalActivityTime = calculaeActivityTime(activities);
+  if (freeTime >= totalActivityTime) {
+    return 'Pots fer totes les activitats';
+  } else {
+    return 'No pots fer totes les activitats';
+  }
+};
 
 module.exports = {
   getSleepHours,
   getActualSleepHours,
   getIdealSleepHours,
   getFreeTimeHours,
-  calculaeActivityTime,
+  calculateActivityTime,
   canDoActivities,
 };
