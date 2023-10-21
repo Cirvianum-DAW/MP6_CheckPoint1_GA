@@ -27,7 +27,7 @@ Quan passes aquesta cadena de text a `console.log`, s'hauria de mostrar alguna c
 
 En aquest exercici, crearàs un petit planificador d'activitats. L'objectiu és calcular si tens temps suficient per realitzar les activitats diàries que tens planejades. El programa calcularà el temps disponible a partir de les teves hores de son, el temps que passes treballant i altres compromisos.
 
-Per practicar-ho, et facilitem les dades amb les que hauràs de provar el teu programa. Aquestes dades són les següents i ja les tens disponibles a l'arxiu data_ex2.js:
+Per practicar-ho, et facilitem les dades amb les que hauràs de provar el teu programa. Aquestes dades són les següents i ja les tens disponibles al mateix arxiu:
 
 ```javascript
 const sleepHours = {
