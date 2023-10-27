@@ -2,7 +2,7 @@
 const { users } = require('./data_ex3');
 
 //Retornar un array amb els noms de tots els usuaris que tenen el hobbie "running"
-//Opció sense fer ús de m`etodes d'array
+//Opció sense fer ús de metodes d'array
 function getUsersByHobby(hobby) {
   const usersWithHobby = [];
   for (let i = 0; i < users.length; i++) {
@@ -15,7 +15,7 @@ function getUsersByHobby(hobby) {
 }
 
 //Opció fent ús de mètodes d'array
-function getUsersByHobby(hobby) {
+function getUsersByHobby2(hobby) {
   return users
     .filter((user) => user.hobbies.includes(hobby))
     .map((user) => user.name);
@@ -60,9 +60,8 @@ function sharedHobbies(userId) {
   const userFriends = friends.map((friend) =>
     users.find((user) => user.id === friend.id)
   );
-  //Anem a fer un array amb els hobbies de l'usuari i els seus amics
+  //Anem a fer un array amb els hobbies dels seus amics
   const userFriendsHobbies = userFriends.map((friend) => friend.hobbies);
-  console.log(userFriendsHobbies);
   //Ara he de buscar coincidencies entre els hobbies de l'usuari i els seus amics
   const userHobbies = user.hobbies;
   // Amb some miro si algun dels hobbies de l'usuari coincideix amb els hobbies dels seus amics

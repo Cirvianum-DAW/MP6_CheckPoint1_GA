@@ -10,6 +10,7 @@ function taulerEscacs() {
   // Si la fila és imparell i la columna és imparell, posem un espai
   // La suma d'un nombre parell i un nombre imparell sempre és imparell
   // La suma de dos nombres parells sempre és parell
+
   let tauler = '';
   for (let i = 0; i < 8; i++) {
     for (let j = 0; j < 8; j++) {
@@ -23,6 +24,7 @@ function taulerEscacs() {
     tauler += '\n';
   }
   return tauler;
+  console.log(tauler);
 }
 
 module.exports = { taulerEscacs };

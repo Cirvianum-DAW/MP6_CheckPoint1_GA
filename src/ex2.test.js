@@ -3,7 +3,7 @@ const {
   getActualSleepHours,
   getIdealSleepHours,
   getFreeTimeHours,
-  calculaeActivityTime,
+  calculateActivityTime,
   canDoActivities,
 } = require('./Ex2');
 
@@ -31,7 +31,7 @@ describe('Ex2', () => {
 
   test('calculateActivityTime', () => {
     expect(
-      calculaeActivityTime([
+      calculateActivityTime([
         { name: 'Gym', time: 1 },
         { name: 'Party', time: 2 },
         { name: 'Watch TV', time: 3 },
@@ -48,7 +48,7 @@ describe('Ex2', () => {
         { name: 'Watch TV', time: 3 },
         { name: 'Play videogames', time: 5 },
       ])
-    ).toBe("You can't do all the activities");
+    ).toBe('No pots fer totes les activitats');
   });
 });
 

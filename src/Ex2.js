@@ -68,7 +68,7 @@ const calculateActivityTime = (activities) => {
 // En funció del temps que tenim lliure, podem fer totes les activitats o no
 const canDoActivities = (activities) => {
   const freeTime = getFreeTimeHours();
-  const totalActivityTime = calculaeActivityTime(activities);
+  const totalActivityTime = calculateActivityTime(activities);
   if (freeTime >= totalActivityTime) {
     return 'Pots fer totes les activitats';
   } else {
